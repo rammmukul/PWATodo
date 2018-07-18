@@ -1,4 +1,5 @@
 const dbUrl = process.env.MONGO_URI || 'mongodb://localhost:27017'
+const mongo = require('mongodb')
 
 async function getDb (user) {
   const client = await require('mongodb').MongoClient.connect(dbUrl)
@@ -32,10 +33,10 @@ module.exports = {
       done: false
     })
   },
-  async setTodo (user, listId, todoId, todo, done) {
+  async setTodo (user, listId, todoId, todo, done = false) {
     const db = await getDb(user)
     const col = await db.collection(listId)
-    return col.findOneAndUpdate({_id: todoId},
+    return col.findOneAndUpdate({_id: mongo.ObjectId(todoId)},
       {$set: {todo, done}}
     )
   },

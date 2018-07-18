@@ -1,13 +1,11 @@
-const model = require('./model')
+const model = require('../model')
 
 module.exports = {
   async getTodos (req, res) {
     try {
       const list = await model.getTodos('user')
-      console.log(list)
-      res.json(list)
+      res.json(list.map(list => ({name: list.name, url: `/api/${list.name}/`})))
     } catch (e) {
-      console.log(e)
       res.status(500).send()
     }
   },
@@ -46,14 +44,14 @@ module.exports = {
   async setTodo (req, res) {
     try {
       const list = await model.setTodo('user', req.params.listId, req.params.todoId, req.body.todo, req.body.done)
-      res.json(list)
+      res.json(list.ok)
     } catch (e) {
       res.status(500).send()
     }
   },
   async removeTodo (req, res) {
     try {
-      await model.removeTodoList('user', req.params.listId, req.params.todoId)
+      await model.removeTodo('user', req.params.listId, req.params.todoId)
       res.status(200).send()
     } catch (e) {
       res.status(500).send()
