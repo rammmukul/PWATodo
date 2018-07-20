@@ -1,0 +1,658 @@
+.textarea {
+  padding: 0.2rem 1rem;
+}
+
+[type=text]:hover, [type=text], input:hover, input, [type=submit]:hover, [type=submit], [type=button]:hover, [type=button], button:hover, button {
+  box-sizing: content-box;
+  margin: 0.2rem;
+  padding: 0.2rem 1rem;
+  width: auto;
+  height: 2rem;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--primary);
+  z-index: 10000;
+  display: grid;
+  padding: 0.5rem;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: 1fr;
+  justify-items: stretch;
+  align-items: center;
+  grid-gap: 1rem 1rem;
+  gap: 1rem 1rem;
+}
+
+.nav * {
+  margin: 0;
+}
+
+a {
+  color: #007;
+}
+
+a:hover {
+  color: #447;
+}
+
+:root {
+  --background: #eef;
+}
+
+:root {
+  --error: #f57;
+}
+
+:root {
+  --success: #8f5;
+}
+
+:root {
+  --warning: #fd5;
+}
+
+:root {
+  --primary: #79f;
+}
+
+:root {
+  --todo: #fac696;
+}
+
+:root {
+  background-color: var(--background);
+}
+
+button {
+  background-color: var(--primary);
+}
+
+[type=button] {
+  background-color: var(--primary);
+}
+
+[type=submit] {
+  background-color: var(--primary);
+}
+
+[type=submit]:hover, [type=submit], [type=button]:hover, [type=button], button:hover, button {
+  border: 0.1rem solid var(--primary);
+  background-color: var(--primary);
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+[type=submit]:hover, [type=submit], [type=button]:hover, [type=button], button, button:hover {
+  border: 0.1rem solid var(--primary);
+  background-color: var(--primary);
+}
+
+[type=button]:hover {
+  filter: brightness(1.2);
+}
+
+[type=submit]:hover, [type=submit], button, button:hover, [type=button], [type=button]:hover {
+  border: 0.1rem solid var(--primary);
+  background-color: var(--primary);
+}
+
+[type=submit]:hover {
+  filter: brightness(1.2);
+}
+
+button.background {
+  border: 0.1rem solid var(--background);
+  background-color: var(--background);
+}
+
+button.error {
+  border: 0.1rem solid var(--error);
+  background-color: var(--error);
+}
+
+button.success {
+  border: 0.1rem solid var(--success);
+  background-color: var(--success);
+}
+
+button.warning {
+  border: 0.1rem solid var(--warning);
+  background-color: var(--warning);
+}
+
+button.primary {
+  border: 0.1rem solid var(--primary);
+  background-color: var(--primary);
+}
+
+button.todo {
+  border: 0.1rem solid var(--todo);
+  background-color: var(--todo);
+}
+
+[type=button].background {
+  border: 0.1rem solid var(--background);
+  background-color: var(--background);
+}
+
+[type=button].error {
+  border: 0.1rem solid var(--error);
+  background-color: var(--error);
+}
+
+[type=button].success {
+  border: 0.1rem solid var(--success);
+  background-color: var(--success);
+}
+
+[type=button].warning {
+  border: 0.1rem solid var(--warning);
+  background-color: var(--warning);
+}
+
+[type=button].primary {
+  border: 0.1rem solid var(--primary);
+  background-color: var(--primary);
+}
+
+[type=button].todo {
+  border: 0.1rem solid var(--todo);
+  background-color: var(--todo);
+}
+
+[type=submit].background {
+  border: 0.1rem solid var(--background);
+  background-color: var(--background);
+}
+
+[type=submit].error {
+  border: 0.1rem solid var(--error);
+  background-color: var(--error);
+}
+
+[type=submit].success {
+  border: 0.1rem solid var(--success);
+  background-color: var(--success);
+}
+
+[type=submit].warning {
+  border: 0.1rem solid var(--warning);
+  background-color: var(--warning);
+}
+
+[type=submit].primary {
+  border: 0.1rem solid var(--primary);
+  background-color: var(--primary);
+}
+
+[type=submit].todo {
+  border: 0.1rem solid var(--todo);
+  background-color: var(--todo);
+}
+
+.background {
+  background-color: var(--background);
+}
+
+.background:hover {
+  border: 0.1rem solid var(--background);
+  background-color: var(--background);
+  filter: brightness(1.2);
+}
+
+.error {
+  background-color: var(--error);
+}
+
+.error:hover {
+  border: 0.1rem solid var(--error);
+  background-color: var(--error);
+  filter: brightness(1.2);
+}
+
+.success {
+  background-color: var(--success);
+}
+
+.success:hover {
+  border: 0.1rem solid var(--success);
+  background-color: var(--success);
+  filter: brightness(1.2);
+}
+
+.warning {
+  background-color: var(--warning);
+}
+
+.warning:hover {
+  border: 0.1rem solid var(--warning);
+  background-color: var(--warning);
+  filter: brightness(1.2);
+}
+
+.primary {
+  background-color: var(--primary);
+}
+
+.primary:hover {
+  border: 0.1rem solid var(--primary);
+  background-color: var(--primary);
+  filter: brightness(1.2);
+}
+
+.todo {
+  background-color: var(--todo);
+}
+
+.todo:hover {
+  border: 0.1rem solid var(--todo);
+  background-color: var(--todo);
+  filter: brightness(1.2);
+}
+
+.background {
+  background-color: var(--background);
+}
+
+.error {
+  background-color: var(--error);
+}
+
+.success {
+  background-color: var(--success);
+}
+
+.warning {
+  background-color: var(--warning);
+}
+
+.primary {
+  background-color: var(--primary);
+}
+
+.todo {
+  background-color: var(--todo);
+}
+
+.background:hover {
+  filter: brightness(1.2);
+}
+
+.background:active {
+  filter: brightness(0.8);
+}
+
+.error:hover {
+  filter: brightness(1.2);
+}
+
+.error:active {
+  filter: brightness(0.8);
+}
+
+.success:hover {
+  filter: brightness(1.2);
+}
+
+.success:active {
+  filter: brightness(0.8);
+}
+
+.warning:hover {
+  filter: brightness(1.2);
+}
+
+.warning:active {
+  filter: brightness(0.8);
+}
+
+.primary:hover {
+  filter: brightness(1.2);
+}
+
+.primary:active {
+  filter: brightness(0.8);
+}
+
+.todo:hover {
+  filter: brightness(1.2);
+}
+
+.todo:active {
+  filter: brightness(0.8);
+}
+
+input {
+  border: 0.1rem solid #0037dd;
+  background-color: var(--primary);
+  filter: brightness(1.6);
+  color: black;
+}
+
+input:hover {
+  border: 0.1rem solid #0037dd;
+  background-color: var(--primary);
+  filter: brightness(1.4);
+}
+
+[type=text] {
+  border: 0.1rem solid #0037dd;
+  background-color: var(--primary);
+  filter: brightness(1.6);
+  color: black;
+}
+
+[type=text]:hover {
+  border: 0.1rem solid #0037dd;
+  background-color: var(--primary);
+  filter: brightness(1.4);
+}
+
+button {
+  filter: brightness(1);
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+button:active {
+  background-color: var(--primary);
+  filter: brightness(0.8);
+}
+
+[type=button] {
+  filter: brightness(1);
+}
+
+[type=button]:hover {
+  filter: brightness(1.2);
+}
+
+[type=button]:active {
+  background-color: var(--primary);
+  filter: brightness(0.8);
+}
+
+[type=submit] {
+  filter: brightness(1);
+}
+
+[type=submit]:hover {
+  filter: brightness(1.2);
+}
+
+[type=submit]:active {
+  background-color: var(--primary);
+  filter: brightness(0.8);
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", "sans-serif";
+}
+
+.container {
+  display: grid;
+  padding: 0.5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  justify-items: stretch;
+  align-items: center;
+  grid-gap: 1rem 1rem;
+  gap: 1rem 1rem;
+}
+
+@media (min-width: 250px) {
+  .container {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(1, minmax(80px, max-content));
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem 1rem;
+    gap: 1rem 1rem;
+  }
+}
+@media (min-width: 500px) {
+  .container {
+    display: grid;
+    padding: 0.5rem;
+    grid-template-columns: repeat(2, minmax(80px, max-content));
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem 1rem;
+    gap: 1rem 1rem;
+  }
+}
+@media (min-width: 750px) {
+  .container {
+    display: grid;
+    padding: 0.5rem;
+    grid-template-columns: repeat(3, minmax(80px, max-content));
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem 1rem;
+    gap: 1rem 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    display: grid;
+    padding: 0.5rem;
+    grid-template-columns: repeat(4, minmax(80px, max-content));
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem 1rem;
+    gap: 1rem 1rem;
+  }
+}
+@media (min-width: 1500px) {
+  .container {
+    display: grid;
+    padding: 0.5rem;
+    grid-template-columns: repeat(6, minmax(80px, max-content));
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem 1rem;
+    gap: 1rem 1rem;
+  }
+}
+@media (min-width: 3000px) {
+  .container {
+    display: grid;
+    padding: 0.5rem;
+    grid-template-columns: repeat(12, minmax(80px, max-content));
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem 1rem;
+    gap: 1rem 1rem;
+  }
+}
+.container > * {
+  overflow: auto;
+}
+
+.size-1 {
+  grid-column-end: span 1;
+}
+
+.col-1 {
+  grid-column-start: 1;
+}
+
+.size-2 {
+  grid-column-end: span 2;
+}
+
+.col-2 {
+  grid-column-start: 2;
+}
+
+.size-3 {
+  grid-column-end: span 3;
+}
+
+.col-3 {
+  grid-column-start: 3;
+}
+
+.size-4 {
+  grid-column-end: span 4;
+}
+
+.col-4 {
+  grid-column-start: 4;
+}
+
+.size-5 {
+  grid-column-end: span 5;
+}
+
+.col-5 {
+  grid-column-start: 5;
+}
+
+.size-6 {
+  grid-column-end: span 6;
+}
+
+.col-6 {
+  grid-column-start: 6;
+}
+
+.size-7 {
+  grid-column-end: span 7;
+}
+
+.col-7 {
+  grid-column-start: 7;
+}
+
+.size-8 {
+  grid-column-end: span 8;
+}
+
+.col-8 {
+  grid-column-start: 8;
+}
+
+.size-9 {
+  grid-column-end: span 9;
+}
+
+.col-9 {
+  grid-column-start: 9;
+}
+
+.size-10 {
+  grid-column-end: span 10;
+}
+
+.col-10 {
+  grid-column-start: 10;
+}
+
+.size-11 {
+  grid-column-end: span 11;
+}
+
+.col-11 {
+  grid-column-start: 11;
+}
+
+.size-12 {
+  grid-column-end: span 12;
+}
+
+.col-12 {
+  grid-column-start: 12;
+}
+
+.col--1 {
+  grid-column-start: -1;
+}
+
+.col--2 {
+  grid-column-start: -2;
+}
+
+.col--3 {
+  grid-column-start: -3;
+}
+
+.col--4 {
+  grid-column-start: -4;
+}
+
+.col--5 {
+  grid-column-start: -5;
+}
+
+.col--6 {
+  grid-column-start: -6;
+}
+
+.col--7 {
+  grid-column-start: -7;
+}
+
+.col--8 {
+  grid-column-start: -8;
+}
+
+.col--9 {
+  grid-column-start: -9;
+}
+
+.col--10 {
+  grid-column-start: -10;
+}
+
+.col--11 {
+  grid-column-start: -11;
+}
+
+.col--12 {
+  grid-column-start: -12;
+}
+
+.txt-1 {
+  font-size: 3em;
+}
+
+.txt-2 {
+  font-size: 2.5em;
+}
+
+.txt-3 {
+  font-size: 2em;
+}
+
+.txt-4 {
+  font-size: 1.5em;
+}
+
+.txt-5 {
+  font-size: 1em;
+}
+
+.txt-6 {
+  font-size: 0.5em;
+}
+
+/*# sourceMappingURL=style.css.map */

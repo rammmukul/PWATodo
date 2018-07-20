@@ -1,7 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const viewControler = require('../controlers/view')
+const App = require('../controlers/view').App
 
-router.use(viewControler)
+router.use(express.static('public'))
+router.use(App)
 
 module.exports = router

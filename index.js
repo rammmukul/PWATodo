@@ -6,7 +6,7 @@ const viewRoutes = require('./routes/view')
 
 app.use(bodyParser.json())
 app.use('/api/', apiRoutes)
-app.use('/', viewRoutes)
+app.use('/view/', viewRoutes)
 
 app.use((req, res, next) => {
   const error = new Error('Not found')
